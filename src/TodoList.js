@@ -6,10 +6,13 @@ import getId from "./getId.js"
 function TodoList() {
   const [todos, setTodos] = useState(JSON.parse(window.localStorage.getItem("todos")))
   //sets state to the array of todos in local storage
-  let todoComponents = todos.map(item => {
+
+  let todoComponents = []
+  if (todos != null) {
+  todoComponents = todos.map(item => {
     return <Todo text={item.text} id={item.id} key={item.id} />
-  })
-  //Makes an array of components from the data imported from localStorage
+  })}
+  //Makes an array of components from the data imported from localStorage, unless its empty
 
   const [inputValue, setInputValue] = useState("") //controlled input
 
@@ -19,7 +22,7 @@ function TodoList() {
     window.localStorage.setItem("todos", JSON.stringify(newTodos))
     setInputValue("")
     setTodos(newTodos)
-    /*Gets data from localstorage, adds new todo and updates localstorage, then updates state so the component re-renders. ID is calculated in another file. The text in the form is reset before re-renderfor better user experience.*/
+    /*Gets data from localstorage, adds new todo and updates localstorage, then updates state so the component re-renders. ID is calculated in another file. The text in the form is reset before re-render for better user experience.*/
   }
 
 
