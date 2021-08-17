@@ -6,10 +6,11 @@
 }
 
 #appContainer {
-  margin-top:25vh;
-  margin-bottom:25vh;
-  margin-left:25vw;
-  margin-right:25vw;
+  width: 50%;
+  height: 60vh;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
 
 body {

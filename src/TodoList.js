@@ -1,9 +1,9 @@
-import "./Todos.css"
+import "./TodoList.css"
 
-function Todos() {
+function TodoList() {
   return <div>
-    <section>
-
+    <section id="todos">
+      q
     </section>
 
 
@@ -14,4 +14,4 @@ function Todos() {
   </div>
 }
 /*maybe add onclick animation to button like in bootstrap, also make it responsive */
-export default Todos
+export default TodoList

@@ -1,12 +1,12 @@
 import './App.css';
 import Header from "./Header.js"
-import Todos from "./Todos.js"
+import TodoList from "./TodoList.js"
 
 function App() {
   return (
     <main id="appContainer">
       <Header />
-      <Todos />
+      <TodoList />
     </main>
   );
 }
