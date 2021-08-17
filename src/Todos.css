@@ -1,0 +1,38 @@
+#footer {
+  background-color: rgb(245, 245, 245);
+  border-radius:0rem 0rem 1rem 1rem;
+  padding-top:0.85rem;
+  padding-bottom: 0.85rem;
+  display: flex;
+  justify-content: center;
+  border: 0.3px solid #5B45B9;
+}
+
+#footerInput {
+  background-color: #5B45B9;
+  color: #eee;
+  padding:5px;
+  border-radius: 5px;
+  width:15rem;
+  margin-left:2rem;
+}
+
+#footerInput::placeholder {
+  color:#e8e7e7d5;
+}
+
+#footerButton {
+  color:black;
+  font-weight: bold;
+  padding:0.5rem;
+  border-radius: 7px;
+  border: none;
+  margin-left:5%;
+  cursor: pointer;
+  border: 0.5px lightblue solid;
+  margin-right: 2rem;
+}
+
+#footerButton:hover {
+  background-color: rgb(200, 200, 200);
+}
