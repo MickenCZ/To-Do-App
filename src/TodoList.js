@@ -8,7 +8,7 @@ function TodoList() {
   let todoComponents = todos.map(item => {
     return <Todo text={item.text} id={item.id} key={item.id} />
   })
-
+  //Makes an array of components from the data imported from localStorage
 
   return <div>
     <section id="todos">
