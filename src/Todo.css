@@ -1,0 +1,46 @@
+
+#todoWrapper {
+  border-bottom: 0.5px solid lightgray;
+  height:9vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#buttons {
+  margin-left:10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#todoText {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 1.5vw;
+  color:#000000;
+}
+
+#editTodo {
+  cursor: pointer;
+  border:none;
+  background-color: rgba(255, 166, 0, 0.6);
+  border-radius: 5px;
+  font-size: 30px;
+  margin-right: 1.5rem;
+  padding:0 12px;
+  position: relative;
+}
+
+#editTodo:hover {
+  background-color: orange;
+}
+
+#closeTodo {
+  color:red;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+  margin-right: 1.5rem;
+}

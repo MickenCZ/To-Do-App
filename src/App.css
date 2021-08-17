@@ -6,7 +6,7 @@
 }
 
 #appContainer {
-  width: 50%;
+  width: 50vw;
   height: 60vh;
   margin: auto;
   position: absolute;

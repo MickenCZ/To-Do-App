@@ -1,9 +1,10 @@
 import "./TodoList.css"
+import Todo from "./Todo"
 
 function TodoList() {
   return <div>
     <section id="todos">
-      q
+      <Todo />
     </section>
 
 
