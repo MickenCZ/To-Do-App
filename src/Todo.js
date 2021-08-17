@@ -1,8 +1,8 @@
 import "./Todo.css"
 
-function Todo() {
+function Todo(props) {
   return <div id="todoWrapper">
-          <span id="todoText">Finish thcomponent</span>
+          <span id="todoText">{props.text}</span>
             <div id="buttons">
               <button id="editTodo">Edit</button>
               <button id="closeTodo">&#10005;</button>
