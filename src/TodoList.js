@@ -10,7 +10,7 @@ function TodoList() {
   let todoComponents = []
   if (todos != null) {
   todoComponents = todos.map(item => {
-    return <Todo text={item.text} id={item.id} key={item.id} />
+    return <Todo text={item.text} id={item.id} key={item.id} setTodos={setTodos}/>
   })}
   //Makes an array of components from the data imported from localStorage, unless its empty
 
