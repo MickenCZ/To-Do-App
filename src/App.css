@@ -6,8 +6,8 @@
 }
 
 #appContainer {
-  width: 50vw;
-  height: 60vh;
+  width: 60vw;
+  height: 70vh;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -15,4 +15,17 @@
 
 body {
   background-color:#E8E7E7;
+}
+
+@media only screen and (max-width:800px) {
+  #appContainer {
+    width: 90vw;
+    height:90vh;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  #appContainer {
+    width: 97vw;
+  }
 }

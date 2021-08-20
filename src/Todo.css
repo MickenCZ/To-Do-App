@@ -8,6 +8,7 @@
   justify-content: space-between;
 }
 
+
 #buttons {
   margin-left:10px;
   display: flex;
@@ -19,6 +20,23 @@
   font-family: 'Open Sans', sans-serif;
   padding-left: 1.5vw;
   color:#000000;
+  word-wrap: break-word;
+  max-width: 50vw;
+}
+
+@media only screen and (max-width:450px) {
+  #todoText {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width:820px) {
+  #todoWrapper {
+    height:18vh;
+  }
+  #todoText {
+    font-size: 25px;
+  }
 }
 
 #editTodo {
@@ -44,3 +62,31 @@
   font-size: 40px;
   margin-right: 1.5rem;
 }
+
+#editModal {
+  display: flex;
+}
+
+#editInput {
+  background-color: #5B45B9;
+  color:whitesmoke;
+  font-size: 23px;
+  width:20vw;
+  margin-left: 2rem;
+  border-radius: 3px;
+  margin-right: 10%;
+}
+
+#editButton {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding:10px 20px;
+  font-weight: bold;
+  margin-right:10%;
+}
+
+#editButton:hover {
+  background-color: rgb(221, 220, 220);
+}
+

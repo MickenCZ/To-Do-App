@@ -5,7 +5,7 @@ import getId from "./getId.js"
 
 function TodoList() {
   const [todos, setTodos] = useState(JSON.parse(window.localStorage.getItem("todos")))
-  //sets state to the array of todos in local storage
+  //sets state to the array of todos in local storage. I keep todos in state
 
   let todoComponents = []
   if (todos != null) {
@@ -41,5 +41,5 @@ function TodoList() {
 
   </div>
 }
-/*maybe add onclick animation to button like in bootstrap, also make it responsive */
+
 export default TodoList
