@@ -27,7 +27,6 @@ function TodoList() {
     /*Gets data from localstorage, adds new todo and updates localstorage, then updates state so the component re-renders. ID is calculated in another file. The text in the form is reset before re-render for better user experience.*/
   }
 
-
   return <div>
     <section id="todos">
     {todoComponents}
@@ -36,7 +35,9 @@ function TodoList() {
 
     <footer id="footer">
     <input placeholder="Add item" id="footerInput" value={inputValue} 
-    onChange={(event => setInputValue(event.target.value))}
+    onChange={(event => setInputValue(event.target.value))} onKeyUp={
+      e => {if (e.code === "Enter") {addNewTodo()}}
+    }
     />
     <button id="footerButton" onClick={addNewTodo}>ADD ITEM</button>
     </footer>

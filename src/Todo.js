@@ -38,7 +38,7 @@ function Todo(props) {
   return <div id="todoWrapper">
           <span id="todoText" style={{display: isEditing ? "none" : "block"}}>{props.text}</span>
           <span id="editModal" style={{display: isEditing ? "flex" : "none"}}>
-              <input id="editInput" value={input} onChange={e => handleInput(e.target.value)}/>
+              <input id="editInput" value={input} onChange={e => handleInput(e.target.value)} onKeyUp={e => {if (e.code === "Enter") {editTodo()}}} />
               <button id="editButton" onClick={editTodo}>ADD</button>
           </span>
             <div id="buttons">
@@ -47,5 +47,7 @@ function Todo(props) {
             </div>
   </div>
 }
+
+/*When enter is pressed, it edits the todo, just like if the edit button was pressed*/
 
 export default Todo
