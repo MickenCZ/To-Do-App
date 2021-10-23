@@ -22,6 +22,7 @@ function Todo(props) {
   //controlled input of the input when you edit and storing editing visibility in state. The button and input to edit only appear when clicked.
 
   function editTodo() {
+    if (input !== "") {
     let lsArr = JSON.parse(window.localStorage.getItem("todos"))
     lsArr.forEach(obj => {
       if (obj.id === props.id) {obj.text = input}
@@ -30,6 +31,7 @@ function Todo(props) {
     handleInput("")
     handleEditing(false)
     props.setTodos(lsArr)
+    }
     /*Stores the current todos in local storage in a variable. It looks for the id that matches the id passed from props and gives that objects text attribute the value of the input that we use for editing. Using this localstorage is then updated, input is reset, editing form visibility is set to none and finally state of the parent is updated to re-render the todo and show the difference. */
   }
 
