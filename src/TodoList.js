@@ -18,10 +18,12 @@ function TodoList() {
 
 
   function addNewTodo() {
+    if (inputValue !== "") {
     const newTodos = [...JSON.parse(window.localStorage.getItem("todos")), {text:inputValue, id:getId(window.localStorage.getItem("todos"))}]
     window.localStorage.setItem("todos", JSON.stringify(newTodos))
     setInputValue("")
     setTodos(newTodos)
+  }
     /*Gets data from localstorage, adds new todo and updates localstorage, then updates state so the component re-renders. ID is calculated in another file. The text in the form is reset before re-render for better user experience.*/
   }
 
