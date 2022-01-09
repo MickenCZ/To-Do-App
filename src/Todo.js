@@ -42,8 +42,8 @@ function Todo(props) {
               <button id="editButton" onClick={editTodo}>ADD</button>
           </span>
             <div id="buttons">
-                <button id="editTodo" onClick={() => handleEditing(true)}>Edit</button>
-                <button id="closeTodo" onClick={removeTodo}>&#10005;</button>
+                <button className="editTodo" onClick={() => handleEditing(true)}>Edit</button>
+                <button className="closeTodo" onClick={removeTodo}>&#10005;</button>
             </div>
   </div>
 }
